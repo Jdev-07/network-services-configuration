@@ -28,5 +28,16 @@ Incluye ejemplos de zona directa, zona inversa, configuraciones locales, opcione
 
 1. **Actualizar paquetes:**
    ```bash
-   sudo apt update && sudo apt upgrade -y
+   # Actualizar paquetes
+sudo apt update && sudo apt upgrade -y
+
+# Instalar servidor SSH (opcional para acceso remoto)
+sudo apt install openssh-server -y
+
+# Instalar BIND9 (DNS)
+sudo apt install bind9 bind9-utils bind9-doc -y
+
+# Instalar ISC DHCP Server
+sudo apt install isc-dhcp-server -y
    ```
+
