@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ubuntu-server. root.cloudtech.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ubuntuserver.cloudtech.com.
+2	IN	PTR	ubuntuserver.cloudtech.com.
+5	IN	PTR	mail.cloudtech.com.
+15	IN	PTR	walter.cloudtech.com.
+16	IN	PTR	white.cloudtech.com.
+17	IN	PTR	heisenberg.cloudtech.com.
+
+

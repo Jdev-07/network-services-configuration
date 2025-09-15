@@ -1,0 +1,17 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+#Adaptador puente
+    enp0s3:
+      dhcp4: true
+      optional: true
+#Red interna
+    enp0s8:
+      addresses: [172.16.0.2/24]
+      nameservers:
+        search: [cloudtech.com]
+        addresses: [172.16.0.2,8.8.8.8]
+      dhcp4: false
+      optional: true
+
